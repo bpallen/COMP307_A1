@@ -1,5 +1,10 @@
 *.class
 
+COMP307_A1_Part1/bin/*
+COMP307_A1_Part2/bin/*
+COMP307_A1_Part3/bin/*
+COMP307_A1_Part4/bin/*
+
 # Package Files #
 *.jar
 *.war
