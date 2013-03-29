@@ -3,12 +3,7 @@ package nz.ac.vuw.comp307.a1.part1.allenbenj;
 import java.util.List;
 import java.util.Random;
 
-import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.AABB;
-import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.PointElement;
-import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.SPTree;
-import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.Vector;
-
-import allenbenj.comp307.a1.p1.sptree.*;
+import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.*;
 
 public class Main {
 
