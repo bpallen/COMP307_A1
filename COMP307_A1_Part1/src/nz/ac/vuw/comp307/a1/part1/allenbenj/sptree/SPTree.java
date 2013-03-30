@@ -20,7 +20,7 @@ public class SPTree<T extends SPTree.Element> implements Iterable<T> {
 
 	// TODO maybe have SPTree implement set
 
-	public static final int MAX_LEAF_ELEMENTS = 16;
+	public static final int MAX_LEAF_ELEMENTS = 8;
 	public static final String INDENT_STRING = "    ";
 
 	public static interface Element {
@@ -311,6 +311,7 @@ public class SPTree<T extends SPTree.Element> implements Iterable<T> {
 	}
 	
 	public SPTree(Vector root_p0, Vector root_p1) {
+		// TODO what happens if you have a non-regular root node?
 		if (root_p0 == null || root_p1 == null) throw new NullPointerException("Cut it out!");
 		if (root_p0.size() != root_p1.size()) throw new IllegalArgumentException("Vectors aren't the same size.");
 		if (root_p0.size() < 1) throw new IllegalArgumentException("Can't have less than 1 dimension.");
