@@ -2,9 +2,9 @@ package nz.ac.vuw.comp307.a1.part1.allenbenj.sptree;
 
 /**
  * A n-dimensional vector.
- *
+ * 
  * @author Ben Allen
- *
+ * 
  */
 public class Vector extends AABB {
 
@@ -58,7 +58,15 @@ public class Vector extends AABB {
 	}
 
 	public Vector(double... d) {
-		data = d;
+		data = d.clone();
+	}
+
+	/**
+	 * @return A non-const copy of this Vector.
+	 */
+	public Vector copy() {
+		// this relies on the constructor copying the array!
+		return new Vector(data);
 	}
 
 	public void constify() {

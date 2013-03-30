@@ -18,7 +18,7 @@ import java.util.Set;
  */
 public class SPTree<T extends SPTree.Element> implements Iterable<T> {
 
-	// TODO have SPTree implement set
+	// TODO maybe have SPTree implement set
 
 	public static final int MAX_LEAF_ELEMENTS = 16;
 	public static final String INDENT_STRING = "    ";
@@ -117,7 +117,7 @@ public class SPTree<T extends SPTree.Element> implements Iterable<T> {
 						add(u2);
 					} catch (OutOfBoundsException e) {
 						// this should NOT happen
-						e.printStackTrace();
+						throw new AssertionError(e);
 					}
 				}
 			}
@@ -308,6 +308,14 @@ public class SPTree<T extends SPTree.Element> implements Iterable<T> {
 		if (n_ < 1) throw new IllegalArgumentException("Don't do that.");
 		n = n_;
 		root = new Node<T>(null, AABB.fromExtremes(Vector.zero(n), Vector.one(n)));
+	}
+	
+	public SPTree(Vector root_p0, Vector root_p1) {
+		if (root_p0 == null || root_p1 == null) throw new NullPointerException("Cut it out!");
+		if (root_p0.size() != root_p1.size()) throw new IllegalArgumentException("Vectors aren't the same size.");
+		if (root_p0.size() < 1) throw new IllegalArgumentException("Can't have less than 1 dimension.");
+		n = root_p0.size();
+		root = new Node<T>(null, AABB.fromExtremes(root_p0, root_p1));
 	}
 
 	public boolean add(T t) {
