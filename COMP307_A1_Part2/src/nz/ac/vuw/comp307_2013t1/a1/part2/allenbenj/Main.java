@@ -30,7 +30,9 @@ public class Main {
 
 		// overall feature counts
 		int[] tcount_fpos = new int[12];
+		Arrays.fill(tcount_fpos, 1);
 		int[] tcount_fneg = new int[12];
+		Arrays.fill(tcount_fneg, 1);
 
 		// parse training data
 		while (scan_training.hasNext()) {
@@ -95,6 +97,9 @@ public class Main {
 		while (scan_test.hasNext()) {
 			boolean[] f = parseFeatures(scan_test);
 
+			// it isn't necessary to do this division (and therefore isn't necessary to keep the total counts),
+			// but it gives numbers that are significantly more 'readable'.
+			
 			double score_spam = partialScore(f, prob_fpos[SPAM], prob_fneg[SPAM]) * prob[SPAM]
 					/ partialScore(f, tprob_fpos, tprob_fneg);
 			double score_notspam = partialScore(f, prob_fpos[NOTSPAM], prob_fneg[NOTSPAM]) * prob[NOTSPAM]
