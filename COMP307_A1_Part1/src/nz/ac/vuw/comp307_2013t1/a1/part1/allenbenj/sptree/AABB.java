@@ -1,4 +1,4 @@
-package nz.ac.vuw.comp307.a1.part1.allenbenj.sptree;
+package nz.ac.vuw.comp307_2013t1.a1.part1.allenbenj.sptree;
 
 /**
  * Axis-Aligned Bounding Box

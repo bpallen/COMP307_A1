@@ -1,6 +1,6 @@
-package nz.ac.vuw.comp307.a1.part1.allenbenj;
+package nz.ac.vuw.comp307_2013t1.a1.part1.allenbenj;
 
-import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.*;
+import nz.ac.vuw.comp307_2013t1.a1.part1.allenbenj.sptree.*;
 
 public class Iris implements SPTree.Element {
 

@@ -1,4 +1,4 @@
-package nz.ac.vuw.comp307.a1.part2.allenbenj;
+package nz.ac.vuw.comp307_2013t1.a1.part2.allenbenj;
 
 import java.io.File;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package nz.ac.vuw.comp307.a1.part1.allenbenj;
+package nz.ac.vuw.comp307_2013t1.a1.part1.allenbenj;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-import nz.ac.vuw.comp307.a1.part1.allenbenj.sptree.*;
+import nz.ac.vuw.comp307_2013t1.a1.part1.allenbenj.sptree.*;
 
 public class Main {
 
