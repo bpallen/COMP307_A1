@@ -167,7 +167,7 @@ class DrawingCanvas extends Canvas {
   }
 
 
-  public void clearRect(int x, int y, int width, int height, boolean redraw) {
+  public void eraseRect(int x, int y, int width, int height, boolean redraw) {
     Color save = imgGraphic.getColor();
     imgGraphic.setColor(Color.white);
     imgGraphic.fillRect(x, y, width, height);

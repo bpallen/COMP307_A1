@@ -228,7 +228,7 @@ public class MakeImage implements MouseListener, MouseMotionListener {
 		if (image[r][c])
 			canvas.fillRect(margin + c * wd, margin + r * wd, wd, wd, redisplay);
 		else {
-			canvas.clearRect(margin + c * wd, margin + r * wd, wd, wd, redisplay);
+			canvas.eraseRect(margin + c * wd, margin + r * wd, wd, wd, redisplay);
 			canvas.drawRect(margin + c * wd, margin + r * wd, wd, wd, redisplay);
 		}
 	}
