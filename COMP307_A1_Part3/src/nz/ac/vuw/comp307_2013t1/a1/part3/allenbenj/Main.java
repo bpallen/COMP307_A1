@@ -10,42 +10,56 @@ public class Main {
 
 	private static List<String> catNames;
 	private static List<String> attNames;
-	private static List<Instance> allInstances;
+	private static List<Instance> trainingInstances;
 
 	public static void main(String[] args) throws Exception {
 
-		readDataFile(args[0]);
+		readTrainingData(args[0]);
+		
+		List<Instance> testInstances = readTestData(args[1]);
+		
+		
 
 	}
 
-	private static void readDataFile(String fname) throws IOException {
+	private static void readTrainingData(String fname) throws IOException {
 		// format of names file:
 		// names of categories, separated by spaces
 		// names of attributes category followed by true's and false's for each instance
-
-		System.out.println("Reading data from file " + fname);
+		System.out.println("Reading training data from file " + fname);
 		Scanner din = new Scanner(new File(fname));
-
 		catNames = new ArrayList<String>();
 		for (Scanner s = new Scanner(din.nextLine()); s.hasNext();) {
 			catNames.add(s.next().toLowerCase());
 		}
 		System.out.println("categories (" + catNames.size() + ") : " + catNames);
-
 		attNames = new ArrayList<String>();
 		for (Scanner s = new Scanner(din.nextLine()); s.hasNext();) {
 			attNames.add(s.next().toLowerCase());
 		}
 		System.out.println("attributes (" + attNames.size() + ") : " + attNames);
-
 		// instance = classname and space separated attribute values
 		Instance.useAttributeNames(attNames);
-		allInstances = new ArrayList<Instance>();
+		trainingInstances = new ArrayList<Instance>();
 		while (din.hasNext()) {
-			allInstances.add(new Instance(new Scanner(din.nextLine())));
+			trainingInstances.add(new Instance(new Scanner(din.nextLine())));
 		}
-		System.out.println("Read " + allInstances.size() + " instances.");
-
+		System.out.println("Read " + trainingInstances.size() + " instances.");
 		din.close();
+	}
+	
+	private static List<Instance> readTestData(String fname) throws IOException {
+		System.out.println("Reading test data from file " + fname);
+		Scanner din = new Scanner(new File(fname));
+		din.nextLine();
+		din.nextLine();
+		// instance = classname and space separated attribute values
+		List<Instance> instances = new ArrayList<Instance>();
+		while (din.hasNext()) {
+			instances.add(new Instance(new Scanner(din.nextLine())));
+		}
+		System.out.println("Read " + instances.size() + " instances.");
+		din.close();
+		return instances;
 	}
 }
