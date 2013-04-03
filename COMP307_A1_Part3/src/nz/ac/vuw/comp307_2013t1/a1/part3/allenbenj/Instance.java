@@ -13,6 +13,9 @@ public class Instance {
 	private String cat;
 	private List<Boolean> atts = new ArrayList<Boolean>();
 	
+	/**
+	 * @param att_names_ Must not contain duplicates!
+	 */
 	public static void useAttributeNames(List<String> att_names_) {
 		att_names.clear();
 		att_names.addAll(att_names_);

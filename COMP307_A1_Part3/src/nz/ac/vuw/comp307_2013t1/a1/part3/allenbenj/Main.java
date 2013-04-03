@@ -2,8 +2,10 @@ package nz.ac.vuw.comp307_2013t1.a1.part3.allenbenj;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -16,9 +18,55 @@ public class Main {
 
 		readTrainingData(args[0]);
 		
+		DecisionTree dt = new DecisionTree(trainingInstances);
+		
+		System.out.println();
+		System.out.println("Baseline: " + dt.getBaseline());
+		System.out.println();
+		
 		List<Instance> testInstances = readTestData(args[1]);
 		
+		System.out.println();
 		
+		Map<String, Integer> count_correct = new HashMap<String, Integer>();
+		Map<String, Integer> count_incorrect = new HashMap<String, Integer>();
+		Map<String, Integer> count_total = new HashMap<String, Integer>();
+		int tc_correct = 0;
+		
+		for (Instance inst : testInstances) {
+			String dt_cat = dt.categorise(inst).getCategory();
+			String cat = inst.getCategory();
+			// total count for each category
+			if (!count_total.containsKey(cat)) {
+				count_total.put(cat, 1);
+			} else {
+				count_total.put(cat, count_total.get(cat) + 1);
+			}
+			if (cat.equals(dt_cat)) {
+				// correct
+				if (!count_correct.containsKey(cat)) {
+					count_correct.put(cat, 1);
+				} else {
+					count_correct.put(cat, count_correct.get(cat) + 1);
+				}
+				tc_correct++;
+			} else {
+				// incorrect
+				if (!count_incorrect.containsKey(cat)) {
+					count_incorrect.put(cat, 1);
+				} else {
+					count_incorrect.put(cat, count_incorrect.get(cat) + 1);
+				}
+			}
+		}
+		
+		System.out.println("Correct     : " + count_correct);
+		System.out.println("Incorrect   : " + count_incorrect);
+		System.out.println("Total       : " + count_total);
+		System.out.println("DT Accuracy : " + tc_correct / (double) testInstances.size());
+		System.out.println();
+		
+		dt.print();
 
 	}
 
