@@ -1,13 +1,13 @@
 #!/bin/sh
 #######################################################
-#						      #
+#						                              #
 #     Split data file into training and test set      #
-#     arguments are				      #
-#          base file name,			      #
+#     arguments are				                      #
+#          base file name,			                  #
 #          number of instances for training file      #
 #          suffix for naming the training/test files  #
-#						      #
-#     assumes that the data file is <base>.dat	      #
+#						                              #
+#     assumes that the data file is <base>.data	      #
 #     and that the first two lines are header         #
 #######################################################
 
@@ -17,8 +17,8 @@ if [ "$1" = "" ] ; then
    exit
 fi
 
-if [ ! -e "$1.dat" ] ; then 
-   echo $1.dat does not exist
+if [ ! -e "$1.data" ] ; then 
+   echo $1.data does not exist
    exit
 fi
 
@@ -28,9 +28,9 @@ if [ "$2" = "" ] ; then
    exit
 fi
 
-if [ $2 -gt $(($(wc -l $1.dat|cut -b 1-8)-2)) ] ; then
+if [ $2 -gt $(($(cat "$1.data"|wc -l)-2)) ] ; then
    echo "usage split-datafile filebasename size-of-training \[suffix\]"
-   echo only $(($(wc -l $1.dat|cut -b 1-8)-2)) instances in training set
+   echo only $(($(cat "$1.data"|wc -l)-2)) instances in training set
    exit
 fi
 
@@ -42,15 +42,15 @@ fi
 
 tempdata="/tmp/$$.$1"
 
-cat $1.dat |tail +3 |shuffle -f - > $tempdata
+cat $1.data |tail +3 |shuffle -f - > $tempdata
 
-head -2 $1.dat > $1-training${suffix}.dat
-head -$2 $tempdata >> $1-training${suffix}.dat
+head -2 $1.data > $1-training${suffix}.data
+head -$2 $tempdata >> $1-training${suffix}.data
 
-head -2 $1.dat > $1-test${suffix}.dat
-tail +$(($2+1)) $tempdata >> $1-test${suffix}.dat
+head -2 $1.data > $1-test${suffix}.data
+tail +$(($2+1)) $tempdata >> $1-test${suffix}.data
 
 rm $tempdata
 
-echo created $1-training${suffix}.dat and $1-test${suffix}.dat
+echo created $1-training${suffix}.data and $1-test${suffix}.data
 
