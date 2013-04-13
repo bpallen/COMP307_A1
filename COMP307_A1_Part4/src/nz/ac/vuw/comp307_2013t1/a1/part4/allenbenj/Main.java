@@ -3,7 +3,6 @@ package nz.ac.vuw.comp307_2013t1.a1.part4.allenbenj;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {

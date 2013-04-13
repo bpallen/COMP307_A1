@@ -1,0 +1,221 @@
+Using FEATURE_COUNT : 50
+Using MAX_EPOCHS    : 1000
+Read 100 images.
+ -- GENERATED FEATURES --
+(1,2,true)+(0,3,false)+(9,2,true)+(6,0,false)
+(7,0,true)+(2,3,false)+(7,8,false)+(1,7,true)
+(7,7,true)+(3,9,false)+(9,0,false)+(9,0,false)
+(5,2,true)+(9,2,true)+(6,8,false)+(4,0,true)
+(8,8,false)+(3,7,false)+(9,7,true)+(8,2,false)
+(3,6,true)+(2,1,false)+(0,4,false)+(9,5,true)
+(3,1,true)+(6,5,false)+(8,0,false)+(0,1,true)
+(4,1,false)+(5,4,true)+(5,1,false)+(3,9,true)
+(2,9,true)+(0,2,true)+(1,7,true)+(2,7,false)
+(0,3,false)+(2,6,false)+(6,7,true)+(1,4,true)
+(5,7,true)+(7,1,true)+(9,3,false)+(0,1,false)
+(0,9,true)+(4,4,false)+(1,5,false)+(9,2,true)
+(1,6,true)+(1,7,false)+(7,4,true)+(1,8,true)
+(4,2,false)+(0,6,false)+(2,2,true)+(7,6,false)
+(8,8,true)+(9,1,false)+(7,9,true)+(1,2,true)
+(2,2,false)+(1,1,true)+(8,5,true)+(9,8,false)
+(9,2,false)+(5,8,false)+(6,8,true)+(4,2,false)
+(6,9,false)+(3,4,true)+(6,0,false)+(4,3,false)
+(0,8,true)+(3,1,true)+(8,2,false)+(2,6,false)
+(5,0,false)+(6,7,false)+(1,9,true)+(0,2,true)
+(2,5,false)+(6,3,true)+(8,0,true)+(1,4,true)
+(3,4,false)+(5,3,true)+(7,9,false)+(7,0,false)
+(8,6,true)+(6,6,false)+(0,3,false)+(7,0,true)
+(7,8,true)+(4,5,true)+(1,5,false)+(8,8,true)
+(1,8,false)+(0,6,false)+(1,2,false)+(2,6,false)
+(1,5,true)+(7,8,true)+(9,1,false)+(6,2,false)
+(6,8,false)+(3,6,false)+(8,9,true)+(1,7,true)
+(0,0,true)+(4,5,false)+(6,3,false)+(0,9,true)
+(0,3,true)+(7,8,true)+(9,8,true)+(6,2,false)
+(3,4,true)+(6,6,true)+(7,7,false)+(1,6,true)
+(5,2,true)+(6,5,true)+(7,8,true)+(8,5,false)
+(5,3,false)+(8,6,false)+(1,1,false)+(5,4,true)
+(3,7,true)+(6,5,false)+(2,6,true)+(7,2,true)
+(6,5,false)+(7,9,false)+(1,3,false)+(8,5,false)
+(0,8,false)+(5,8,true)+(4,4,false)+(7,0,false)
+(7,8,true)+(9,3,false)+(2,9,false)+(3,3,true)
+(7,8,false)+(5,2,true)+(2,6,true)+(0,7,true)
+(1,4,false)+(8,5,false)+(6,6,false)+(4,2,false)
+(0,6,false)+(0,1,true)+(0,0,false)+(9,1,true)
+(9,6,false)+(5,4,true)+(5,5,false)+(7,5,false)
+(1,2,true)+(1,4,true)+(4,2,true)+(4,6,true)
+(9,5,true)+(9,5,false)+(9,4,false)+(9,6,false)
+(5,7,true)+(7,9,true)+(6,6,false)+(9,0,false)
+(4,2,true)+(0,3,true)+(3,0,true)+(6,8,true)
+(7,4,true)+(0,2,false)+(2,4,true)+(8,4,false)
+(0,6,false)+(0,7,false)+(2,6,false)+(3,9,false)
+(7,4,false)+(1,7,false)+(0,0,true)+(3,3,false)
+(9,8,true)+(9,2,false)+(7,8,true)+(7,0,false)
+(8,3,false)+(7,1,true)+(8,9,true)+(8,5,false)
+(0,5,false)+(2,5,true)+(2,3,false)+(1,4,true)
+ -- BEGIN TRAINING --
+Correct after    0 epochs : 0 / 100 (0.0%)
+Correct after   10 epochs : 62 / 100 (62.0%)
+Correct after   20 epochs : 54 / 100 (54.0%)
+Correct after   30 epochs : 55 / 100 (55.0%)
+Correct after   40 epochs : 77 / 100 (77.0%)
+Correct after   50 epochs : 67 / 100 (67.0%)
+Correct after   60 epochs : 76 / 100 (76.0%)
+Correct after   70 epochs : 89 / 100 (89.0%)
+Correct after   80 epochs : 92 / 100 (92.0%)
+ -- FINAL PERCEPTRON WEIGHTS --
+-2.442434441031331
+16.86108424435054
+9.414309992310237
+-17.706810516889455
+-6.565056437499627
+1.6607030521496284
+-2.497425299972593
+-4.822007548193957
+13.666858980086442
+-10.847832682741581
+0.7458660972735345
+-10.72310898157048
+16.76188143063078
+-8.044454150602444
+-2.0519267672971653
+-5.9249051522942295
+-26.29464475708521
+-5.355123634461938
+3.949203660901169
+-11.243161206413617
+11.937496520032104
+13.064783982251353
+-5.398887844065129
+-10.789918244762228
+-6.9368496292693
+-0.4792955946232409
+-4.1000465432254725
+-1.299398308301389
+8.502955171866997
+-0.18069495314063266
+-0.10424910531348885
+-3.440243838645614
+-8.43773698772949
+-4.371139156631568
+-6.718300889516706
+-0.6360342716710852
+-1.0579833981000704
+-0.3462437281412676
+18.629296219411586
+21.24901728843319
+1.5448847142826052
+1.6729484352879367
+10.080126383952996
+-6.801426363128975
+-13.459690273903767
+3.579140734955419
+20.931091490501792
+2.37381375792675
+11.04372230849599
+8.173580274504417
+-12.042883826567964
+ -- BEGIN CLASSIFICATION --
+Image 0 <yes> : yes
+Image 1 <yes> : yes
+Image 2 <yes> : yes
+Image 3 <yes> : yes
+Image 4 <yes> : yes
+Image 5 <yes> : yes
+Image 6 <yes> : yes
+Image 7 <yes> : yes
+Image 8 <yes> : yes
+Image 9 <yes> : yes
+Image 10 <yes> : yes
+Image 11 <yes> : yes
+Image 12 <yes> : yes
+Image 13 <yes> : yes
+Image 14 <yes> : yes
+Image 15 <yes> : yes
+Image 16 <yes> : yes
+Image 17 <yes> : yes
+Image 18 <yes> : yes
+Image 19 <yes> : yes
+Image 20 <yes> : yes
+Image 21 <yes> : yes
+Image 22 <yes> : yes
+Image 23 <yes> : yes
+Image 24 <yes> : yes
+Image 25 <yes> : yes
+Image 26 <yes> : yes
+Image 27 <yes> : yes
+Image 28 <yes> : yes
+Image 29 <yes> : yes
+Image 30 <yes> : yes
+Image 31 <yes> : yes
+Image 32 <yes> : yes
+Image 33 <yes> : yes
+Image 34 <yes> : yes
+Image 35 <yes> : yes
+Image 36 <yes> : yes
+Image 37 <yes> : yes
+Image 38 <yes> : yes
+Image 39 <yes> : yes
+Image 40 <yes> : yes
+Image 41 <yes> : yes
+Image 42 <yes> : yes
+Image 43 <yes> : yes
+Image 44 <yes> : yes
+Image 45 <yes> : yes
+Image 46 <yes> : yes
+Image 47 <yes> : yes
+Image 48 <yes> : yes
+Image 49 <yes> : yes
+Image 50 <other> : other
+Image 51 <other> : other
+Image 52 <other> : other
+Image 53 <other> : other
+Image 54 <other> : other
+Image 55 <other> : other
+Image 56 <other> : other
+Image 57 <other> : other
+Image 58 <other> : other
+Image 59 <other> : other
+Image 60 <other> : other
+Image 61 <other> : other
+Image 62 <other> : other
+Image 63 <other> : other
+Image 64 <other> : other
+Image 65 <other> : other
+Image 66 <other> : other
+Image 67 <other> : other
+Image 68 <other> : other
+Image 69 <other> : other
+Image 70 <other> : other
+Image 71 <other> : other
+Image 72 <other> : other
+Image 73 <other> : other
+Image 74 <other> : other
+Image 75 <other> : other
+Image 76 <other> : other
+Image 77 <other> : other
+Image 78 <other> : other
+Image 79 <other> : other
+Image 80 <other> : other
+Image 81 <other> : other
+Image 82 <other> : other
+Image 83 <other> : other
+Image 84 <other> : other
+Image 85 <other> : other
+Image 86 <other> : other
+Image 87 <other> : other
+Image 88 <other> : other
+Image 89 <other> : other
+Image 90 <other> : other
+Image 91 <other> : other
+Image 92 <other> : other
+Image 93 <other> : other
+Image 94 <other> : other
+Image 95 <other> : other
+Image 96 <other> : other
+Image 97 <other> : other
+Image 98 <other> : other
+Image 99 <other> : other
+ -- CLASSIFICATION SUMMARY --
+Features : 50
+Epochs   : 87
+Correct  : 100 / 100 (100.0%)

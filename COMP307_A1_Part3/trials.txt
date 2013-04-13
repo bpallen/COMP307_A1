@@ -1,0 +1,140 @@
+## 10 trials ##
+
+# run1
+	 -- Baseline --
+	Category: live, Probability: 0.810
+	Accuracy : 0.8108108108108109
+	
+	 -- Decision Tree --
+	Correct     : {die=4, live=28}
+	Incorrect   : {die=3, live=2}
+	Total       : {die=7, live=30}
+	Accuracy : 0.8648648648648649
+
+# run2
+	 -- Baseline --
+	Category: live, Probability: 0.830
+	Accuracy : 0.7567567567567568
+	
+	 -- Decision Tree --
+	Correct     : {die=5, live=21}
+	Incorrect   : {die=4, live=7}
+	Total       : {die=9, live=28}
+	Accuracy : 0.7027027027027027
+
+# run3
+	 -- Baseline --
+	Category: live, Probability: 0.820
+	Accuracy : 0.7837837837837838
+	
+	 -- Decision Tree --
+	Correct     : {live=25}
+	Incorrect   : {die=8, live=4}
+	Total       : {die=8, live=29}
+	Accuracy : 0.6756756756756757
+
+# run4
+	 -- Baseline --
+	Category: live, Probability: 0.800
+	Accuracy : 0.8378378378378378
+	
+	 -- Decision Tree --
+	Correct     : {die=3, live=23}
+	Incorrect   : {die=3, live=8}
+	Total       : {die=6, live=31}
+	Accuracy : 0.7027027027027027
+
+# run5
+	 -- Baseline --
+	Category: live, Probability: 0.810
+	Accuracy : 0.8108108108108109
+	
+	 -- Decision Tree --
+	Correct     : {die=3, live=27}
+	Incorrect   : {die=4, live=3}
+	Total       : {die=7, live=30}
+	Accuracy : 0.8108108108108109
+
+# run6
+	 -- Baseline --
+	Category: live, Probability: 0.810
+	Accuracy : 0.8108108108108109
+	
+	 -- Decision Tree --
+	Correct     : {die=4, live=28}
+	Incorrect   : {die=3, live=2}
+	Total       : {die=7, live=30}
+	Accuracy : 0.8648648648648649
+
+# run7
+	 -- Baseline --
+	Category: live, Probability: 0.840
+	Accuracy : 0.7297297297297297
+	
+	 -- Decision Tree --
+	Correct     : {die=2, live=26}
+	Incorrect   : {die=8, live=1}
+	Total       : {die=10, live=27}
+	Accuracy : 0.7567567567567568
+
+# run8
+	 -- Baseline --
+	Category: live, Probability: 0.800
+	Accuracy : 0.8378378378378378
+	
+	 -- Decision Tree --
+	Correct     : {die=5, live=28}
+	Incorrect   : {die=1, live=3}
+	Total       : {die=6, live=31}
+	Accuracy : 0.8918918918918919
+
+# run9
+	 -- Baseline --
+	Category: live, Probability: 0.780
+	Accuracy : 0.8918918918918919
+	
+	 -- Decision Tree --
+	Correct     : {die=1, live=27}
+	Incorrect   : {die=3, live=6}
+	Total       : {die=4, live=33}
+	Accuracy : 0.7567567567567568
+
+# run10
+	 -- Baseline --
+	Category: live, Probability: 0.790
+	Accuracy : 0.8648648648648649
+	
+	 -- Decision Tree --
+	Correct     : {live=27}
+	Incorrect   : {die=5, live=5}
+	Total       : {die=5, live=32}
+	Accuracy : 0.7297297297297297
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

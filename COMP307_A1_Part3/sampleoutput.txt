@@ -1,0 +1,84 @@
+Reading training data from file hepatitis-training.data
+categories (2) : [live, die]
+attributes (16) : [age, female, steroid, antivirals, fatigue, malaise, anorexia, bigliver, firmliver, spleenpalpable, spiders, ascites, varices, bilirubin, sgot, histology]
+Read 110 instances.
+Reading test data from file hepatitis-test.data
+Read 27 instances.
+
+ -- Baseline --
+Category: live, Probability: 0.800
+Accuracy : 0.8518518518518519
+
+ -- Decision Tree --
+Correct     : {die=2, live=20}
+Incorrect   : {die=2, live=3}
+Total       : {die=4, live=23}
+Accuracy : 0.8148148148148148
+
+ascites = True:
+    spiders = True:
+        varices = True:
+            firmliver = True:
+                Category: live, Probability: 1.000
+            firmliver = False:
+                bigliver = True:
+                    steroid = True:
+                        Category: live, Probability: 1.000
+                    steroid = False:
+                        antivirals = True:
+                            fatigue = True:
+                                female = True:
+                                    Category: live, Probability: 1.000
+                                female = False:
+                                    Category: die, Probability: 1.000
+                            fatigue = False:
+                                Category: live, Probability: 1.000
+                        antivirals = False:
+                            female = True:
+                                Category: live, Probability: 1.000
+                            female = False:
+                                Category: die, Probability: 1.000
+                bigliver = False:
+                    Category: live, Probability: 1.000
+        varices = False:
+            Category: die, Probability: 1.000
+    spiders = False:
+        firmliver = True:
+            sgot = True:
+                Category: live, Probability: 1.000
+            sgot = False:
+                female = True:
+                    Category: live, Probability: 1.000
+                female = False:
+                    anorexia = True:
+                        Category: die, Probability: 1.000
+                    anorexia = False:
+                        spleenpalpable = True:
+                            Category: live, Probability: 1.000
+                        spleenpalpable = False:
+                            Category: die, Probability: 1.000
+        firmliver = False:
+            sgot = True:
+                bigliver = True:
+                    spleenpalpable = True:
+                        Category: live, Probability: 1.000
+                    spleenpalpable = False:
+                        anorexia = True:
+                            Category: die, Probability: 1.000
+                        anorexia = False:
+                            Category: live, Probability: 1.000
+                bigliver = False:
+                    Category: die, Probability: 1.000
+            sgot = False:
+                Category: live, Probability: 1.000
+ascites = False:
+    bigliver = True:
+        steroid = True:
+            Category: die, Probability: 1.000
+        steroid = False:
+            anorexia = True:
+                Category: die, Probability: 1.000
+            anorexia = False:
+                Category: live, Probability: 1.000
+    bigliver = False:
+        Category: live, Probability: 1.000
